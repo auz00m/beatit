@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Beatit 🧠</h1>
+      <button id="modeToggle">Toggle Light/Dark Mode</button>
+    </header>
+
+    <!-- Global Section -->
+    <section id="global">
+      <h2>To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+
+      <h2>Study Playlists</h2>
+      <div class="input-group">
+        <input type="text" id="linkTitle" placeholder="Link Title" />
+        <input type="text" id="linkURL" placeholder="https://..." />
+        <button onclick="addLink()">Add</button>
+      </div>
+      <ul id="linkList"></ul>
+
+      <h2>Notes & Checklist</h2>
+      <textarea id="Notes" placeholder="Write your notes here..."></textarea>
+      <textarea id="Checklist" placeholder="Write your notes here..."></textarea>
+    </section>
+
+    <!-- Subject Manager Section -->
+    <section id="subjectManager">
+      <h2>Subject Specific Sections</h2>
+      <div class="input-group">
+        <input type="text" id="subjectInput" placeholder="Add Subject Name" />
+        <button onclick="addSubject()">Add Subject</button>
+      </div>
+      <div id="subjectsContainer"></div>
+    </section>
+
+    <!-- Pomodoro Timer Section -->
+    <section id="pomodoro">
+      <h2>Pomodoro Timer</h2>
+      <div class="timer">
+        <span id="timerDisplay">25:00</span>
+      </div>
+      <div class="input-group">
+        <button id="startPauseBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+
+    <section id="feedback" class="box">
+       <h2>Feedback & Support</h2>
+       <p>We'd love your suggestions or support. Send us a message!</p>
+  
+        <input type="email" id="userEmail" placeholder="Your email" required />
+        <textarea id="userMessage" placeholder="Your feedback or message..." required></textarea>
+          <button onclick="sendFeedback()">Send</button>
+
+        <div id="feedback-status"></div>
+    </section>
+
+
+    <section id="donate" class="box">
+  <h2>Support Beatit 💖</h2>
+  <p>If you find this helpful, you can support with a small donation:</p>
+  <p>UPI ID: <strong>8787884316@fampay</strong></p>
+</section>
+
+
+    <footer>Made by Aric, customized for Aric 💻</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
