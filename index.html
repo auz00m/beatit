@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,3 +83,69 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Beatit 🧠</h1>
+      <button id="modeToggle">Toggle Light/Dark Mode</button>
+    </header>
+
+    <!-- Global Section -->
+    <section id="global">
+      <h2>Global To-Do List</h2>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+
+      <h2>Global Study Playlists</h2>
+      <div class="input-group">
+        <input type="text" id="linkTitle" placeholder="Link Title" />
+        <input type="text" id="linkURL" placeholder="https://..." />
+        <button onclick="addLink()">Add</button>
+      </div>
+      <ul id="linkList"></ul>
+
+      <h2>Global Notes & Checklist</h2>
+      <textarea id="globalNotes" placeholder="Global notes..."></textarea>
+      <textarea id="globalChecklist" placeholder="Global checklist..."></textarea>
+    </section>
+
+    <!-- Subject Manager Section -->
+    <section id="subjectManager">
+      <h2>Subject Specific Sections</h2>
+      <div class="input-group">
+        <input type="text" id="subjectInput" placeholder="Add Subject Name" />
+        <button onclick="addSubject()">Add Subject</button>
+      </div>
+      <div id="subjectsContainer"></div>
+    </section>
+
+    <!-- Pomodoro Timer Section -->
+    <section id="pomodoro">
+      <h2>Pomodoro Timer</h2>
+      <div class="timer">
+        <span id="timerDisplay">25:00</span>
+      </div>
+      <div class="input-group">
+        <button id="startPauseBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <footer>Made by you, customized for you 💻</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 74247f9d8c3331f35ec1ed589832b768e7c0783b
